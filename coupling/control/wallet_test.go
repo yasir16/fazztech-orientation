@@ -10,7 +10,7 @@ func TestFilterWallet(t *testing.T) {
 	}
 
 	wallets = wallets.Filter(func(w Wallet) bool {
-		return w.money > 500
+		return w.balance > 500
 	})
 
 	if len(wallets) != 2 {

@@ -2,15 +2,15 @@ package data
 
 //Wallet dummy wallet
 type Wallet struct {
-	userID uint64
-	money  float64
+	userID  uint64
+	balance float64
 }
 
 //NewWallet create new wallet object
-func NewWallet(userID uint64, money float64) Wallet {
+func NewWallet(userID uint64, balance float64) Wallet {
 	return Wallet{
-		userID: userID,
-		money:  money,
+		userID:  userID,
+		balance: balance,
 	}
 }
 
@@ -19,7 +19,7 @@ func (w Wallet) UserID() uint64 {
 	return w.userID
 }
 
-//Money return wallet money
-func (w Wallet) Money() float64 {
-	return w.money
+//Balance return wallet balance
+func (w Wallet) Balance() float64 {
+	return w.balance
 }

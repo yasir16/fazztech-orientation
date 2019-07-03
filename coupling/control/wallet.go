@@ -2,8 +2,8 @@ package control
 
 //Wallet dummy wallet
 type Wallet struct {
-	userID uint64
-	money  float64
+	userID  uint64
+	balance float64
 }
 
 //Wallets is array of wallet
